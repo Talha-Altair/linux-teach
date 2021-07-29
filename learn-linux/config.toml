@@ -1,0 +1,5 @@
+baseURL = "http://altair.com/"
+languageCode = "en-us"
+title = "learn linux"
+theme = "dimension"
+PublishDir = "../docs/"
