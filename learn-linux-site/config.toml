@@ -1,4 +1,4 @@
-baseURL = "http://altair.com/"
+baseURL = "https://talha-altair.github.io/linux-teach/"
 languageCode = "en-us"
 title = "learn linux"
 theme = "dimension"

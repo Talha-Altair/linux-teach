@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on learn linux</title>
-    <link>http://altair.com/posts/</link>
+    <link>https://talha-altair.github.io/linux-teach/posts/</link>
     <description>Recent content in Posts on learn linux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Jul 2021 15:44:07 +0530</lastBuildDate>
     
-	<atom:link href="http://altair.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://talha-altair.github.io/linux-teach/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Miniconda</title>
-      <link>http://altair.com/posts/miniconda/</link>
+      <link>https://talha-altair.github.io/linux-teach/posts/miniconda/</link>
       <pubDate>Thu, 29 Jul 2021 15:44:07 +0530</pubDate>
       
-      <guid>http://altair.com/posts/miniconda/</guid>
+      <guid>https://talha-altair.github.io/linux-teach/posts/miniconda/</guid>
       <description>Miniconda Note: notes
 Install Miniconda in Ubuntu
 cd /tmp wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh chmod +x Miniconda3-latest-Linux-x86_64.sh ./Miniconda3-latest-Linux-x86_64.sh conda config --set auto_activate_base false Install Miniconda in windows
@@ -28,19 +28,19 @@ Open Miniconda Prompt and run as admin You should see like this: (base) Run this
     
     <item>
       <title>SSH gen</title>
-      <link>http://altair.com/posts/ssh-gen/</link>
+      <link>https://talha-altair.github.io/linux-teach/posts/ssh-gen/</link>
       <pubDate>Thu, 29 Jul 2021 15:44:07 +0530</pubDate>
       
-      <guid>http://altair.com/posts/ssh-gen/</guid>
+      <guid>https://talha-altair.github.io/linux-teach/posts/ssh-gen/</guid>
       <description>How to generate ssh key on Ubuntu? ssh-keygen -t rsa -b 4096 -C &amp;quot;email@gmail.com&amp;quot; eval &amp;quot;$(ssh-agent -s)&amp;quot; ssh-add ~/.ssh/id_rsa pbcopy &amp;lt; ~/.ssh/id_rsa.pub or cat ~/.ssh/id_rsa.pub (then copy the content) then copy the file on Github/Gitlab </description>
     </item>
     
     <item>
       <title>ZSH SETUP</title>
-      <link>http://altair.com/posts/zshterminal/</link>
+      <link>https://talha-altair.github.io/linux-teach/posts/zshterminal/</link>
       <pubDate>Thu, 29 Jul 2021 15:44:07 +0530</pubDate>
       
-      <guid>http://altair.com/posts/zshterminal/</guid>
+      <guid>https://talha-altair.github.io/linux-teach/posts/zshterminal/</guid>
       <description>Zsh Terminal Zsh Terminal
 sudo apt-get update sudo apt upgrade sudo apt install zsh sudo apt-get install powerline fonts-powerline git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k gedit .zshrc source ~/.zshrc ZSH_THEME=&amp;quot;powerlevel9k/powerlevel9k&amp;quot;POWERLEVEL9K_DISABLE_RPROMPT=true POWERLEVEL9K_PROMPT_ON_NEWLINE=true POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=&amp;quot;▶&amp;quot; POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=&amp;quot;&amp;quot; chsh -s /bin/zsh sudo gedit ~/.zshrc ZSH_THEME=&amp;quot;agnoster&amp;quot; source ~/.zshrc sudo gedit ~/.oh-my-zsh/themes/agnoster.zsh-theme comment #prompt_context
 Error: conda command not found Solution: Copy your conda setup from .bashrc and paste it in .zshrc </description>
