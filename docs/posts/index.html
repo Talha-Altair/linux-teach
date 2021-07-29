@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="http://altair.com/assets/css/main.css"/>
+    <link rel="canonical" href="http://altair.com/posts/">
+    <noscript><link rel="stylesheet" href="http://altair.com/assets/css/noscript.css"/></noscript>
+    <style>
+        :root{--site-background : url("http://altair.com/images/bg.jpg")};
+    </style> 
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+
+<body class="is-preload">
+
+    
+        <div id="wrapper">
+
+            
+                <header id="header">
+                    <div class="logo">
+                        <a href="/">
+                            <span class="icon">
+                                <img src="">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Posts</h1>
+                            
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#miniconda">Miniconda</a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#ssh-gen">SSH gen</a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#zsh-setup">ZSH SETUP</a>
+                                        </li>
+                                    
+                                
+                            
+                        </ul>
+                    </nav>
+                </header>
+
+            
+                <div id="main">
+
+                    
+                        
+                            
+                                <article id="miniconda">
+                                    <h2 class="major">Miniconda</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <h1 id="miniconda">Miniconda</h1>
+<p><strong>Note:</strong> notes</p>
+<p>Install Miniconda in Ubuntu</p>
+<pre><code>cd /tmp
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+
+conda config --set auto_activate_base false
+</code></pre><p>Install Miniconda in windows</p>
+<pre><code>Go to https://docs.conda.io/en/latest/miniconda.html
+Select Python 3.7
+</code></pre><p><a href="https://docs.conda.io/en/latest/miniconda.html">ref</a></p>
+<p>How to verify Miniconda in Windows?</p>
+<pre><code>Type miniconda in your &quot;Windows app search box&quot; and you will get something like this
+
+(TBA)
+</code></pre><p>How to create a conda environment by using miniconda</p>
+<pre><code>Open Miniconda Prompt and run as admin
+You should see like this:
+
+(base) 
+
+Run this command:
+conda create -n py37 -y python=3.7
+
+To activate conda:
+conda activate py37
+
+To deactivate:
+conda deactivate
+</code></pre><p>How to verify Python and version?</p>
+<pre><code>In your console (conda prompt), type this:
+python --version
+
+You should see
+python 3.7
+</code></pre>
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="ssh-gen">
+                                    <h2 class="major">SSH gen</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <h1 id="how-to-generate-ssh-key-on-ubuntu">How to generate ssh key on Ubuntu?</h1>
+<pre><code>ssh-keygen -t rsa -b 4096 -C &quot;email@gmail.com&quot;
+
+eval &quot;$(ssh-agent -s)&quot;
+
+ssh-add ~/.ssh/id_rsa
+
+pbcopy &lt; ~/.ssh/id_rsa.pub
+or
+cat ~/.ssh/id_rsa.pub
+    (then copy the content)
+
+
+then copy the file on Github/Gitlab
+</code></pre>
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="zsh-setup">
+                                    <h2 class="major">ZSH SETUP</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <h1 id="zsh-terminal">Zsh Terminal</h1>
+<p>Zsh Terminal</p>
+<pre><code>sudo apt-get update
+sudo apt upgrade
+</code></pre><pre><code>sudo apt install zsh
+sudo apt-get install powerline fonts-powerline
+</code></pre><pre><code>git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+</code></pre><pre><code>cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+</code></pre><pre><code>git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+</code></pre><pre><code>gedit .zshrc
+
+source ~/.zshrc
+ZSH_THEME=&quot;powerlevel9k/powerlevel9k&quot;POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=&quot;▶&quot;
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=&quot;&quot;
+</code></pre><pre><code>chsh -s /bin/zsh
+
+sudo gedit ~/.zshrc
+
+ZSH_THEME=&quot;agnoster&quot;
+
+source ~/.zshrc
+
+sudo gedit ~/.oh-my-zsh/themes/agnoster.zsh-theme
+</code></pre><p>comment #prompt_context</p>
+<pre><code>Error: conda command not found
+
+Solution:
+Copy your conda setup from .bashrc and paste it in .zshrc 
+</code></pre>
+                                </article>
+                            
+                        
+                    
+
+                </div>
+
+                
+<footer id="footer">
+    <p class="copyright">&copy; Author: <a href="https://github.com/Talha-Altair">Talha-Altair</a></p>
+</footer>
+
+        </div>
+
+    
+    <div id="bg"></div>
+
+</body>
+
+
+    
+    <script src=http://altair.com/assets/js/jquery.min.js></script>
+    <script src=http://altair.com/assets/js/browser.min.js></script>
+    <script src=http://altair.com/assets/js/breakpoints.min.js></script>
+    <script src=http://altair.com/assets/js/util.js></script>
+    <script src=http://altair.com/assets/js/main.js></script>
+
+</html>

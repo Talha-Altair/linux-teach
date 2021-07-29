@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://altair.com/</loc>
+    <lastmod>2021-07-29T15:44:07+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://altair.com/posts/miniconda/</loc>
+    <lastmod>2021-07-29T15:44:07+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://altair.com/posts/</loc>
+    <lastmod>2021-07-29T15:44:07+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://altair.com/posts/ssh-gen/</loc>
+    <lastmod>2021-07-29T15:44:07+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://altair.com/posts/zshterminal/</loc>
+    <lastmod>2021-07-29T15:44:07+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://altair.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://altair.com/tags/</loc>
+  </url>
+  
+</urlset>
