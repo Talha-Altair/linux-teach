@@ -27,6 +27,22 @@ Open Miniconda Prompt and run as admin You should see like this: (base) Run this
     </item>
     
     <item>
+      <title>Setup Tools</title>
+      <link>https://talha-altair.github.io/linux-teach/posts/fresher/</link>
+      <pubDate>Thu, 29 Jul 2021 15:44:07 +0530</pubDate>
+      
+      <guid>https://talha-altair.github.io/linux-teach/posts/fresher/</guid>
+      <description>Installation guide A guide to help you through the basic installation for ubuntu! Brave installation:
+sudo snap install brave Joplin installation:
+sudo apt update sudo apt install snapd sudo snap install joplin-desktop Docker:
+sudo apt install docker.io Type in the following to verify if docker has been installed:
+sudo docker Postman:
+sudo snap install postman Apt installation:
+sudo apt update sudo apt install snapd Install Visual Studio Code:
+sudo snap install --classic code Install zoom:</description>
+    </item>
+    
+    <item>
       <title>SSH gen</title>
       <link>https://talha-altair.github.io/linux-teach/posts/ssh-gen/</link>
       <pubDate>Thu, 29 Jul 2021 15:44:07 +0530</pubDate>

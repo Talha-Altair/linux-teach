@@ -49,6 +49,14 @@
                                 
                                     
                                         <li>
+                                            <a href="#setup-tools">Setup Tools</a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
                                             <a href="#ssh-gen">SSH gen</a>
                                         </li>
                                     
@@ -112,6 +120,60 @@ python --version
 
 You should see
 python 3.7
+</code></pre>
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="setup-tools">
+                                    <h2 class="major">Setup Tools</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <h1 id="installation-guide">Installation guide</h1>
+<p>A guide to help you through the basic installation for ubuntu!
+Brave installation:</p>
+<pre><code>sudo snap install brave
+</code></pre><p>Joplin installation:</p>
+<pre><code>sudo apt update
+sudo apt install snapd
+sudo snap install joplin-desktop
+</code></pre><p>Docker:</p>
+<pre><code>sudo apt install docker.io
+</code></pre><p>Type in the following to verify if docker has been installed:</p>
+<pre><code>sudo docker
+</code></pre><p>Postman:</p>
+<pre><code>sudo snap install postman
+</code></pre><p>Apt installation:</p>
+<pre><code>sudo apt update
+sudo apt install snapd
+</code></pre><p>Install Visual Studio Code:</p>
+<pre><code>sudo snap install --classic code
+</code></pre><p>Install zoom:</p>
+<pre><code>sudo snap install zoom-client
+</code></pre><p>Install slack:</p>
+<pre><code>sudo snap install slack --classic
+</code></pre><p>Install git:</p>
+<pre><code>sudo apt install git
+</code></pre><p>Add ssh:</p>
+<pre><code>ssh-keygen -t rsa -b 4096 -C &quot;youremail@gmail.com&quot;
+eval &quot;$(ssh-agent -s)&quot;
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+</code></pre><p>Once you&rsquo;re done with the above commands, copy the SSH key generated and add it in GitHub.</p>
+<p>To do so, go to settings on GitHub, then you will find SSH and GPG keys on the left hand side panel. Go into it and add in the SSH key generated and name it.</p>
+<p>Mini conda installation:</p>
+<pre><code>cd /tmp
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+</code></pre><p>Once you&rsquo;re done with the above steps, close the terminal and open it again. Then type in the following command:</p>
+<pre><code>conda config --set auto_activate_base false
+</code></pre><p>To create a new environment, follow the command below:</p>
+<pre><code>conda create -n py38 -y python=3.8
+</code></pre><p>To activate and deactivate the environment, type in the commands below:</p>
+<pre><code>conda activate py38
+conda deactivate
 </code></pre>
                                 </article>
                             
